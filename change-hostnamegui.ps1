@@ -111,7 +111,7 @@ $ChangeHostnameNow.Add_Click({
     Set-Content -Path .\counter.txt -Value $pcnumberint
     $wshell = New-Object -ComObject Wscript.Shell -InformationAction Stop
     $wshell.Popup("Hostname en cours de changement...",0,"Changement du hostname",64)
-    #Restart-Computer
+    Restart-Computer
 })
 
 [void]$Sainte_Famille_Saintonge_Automatic_Hostname_Changer.ShowDialog()
